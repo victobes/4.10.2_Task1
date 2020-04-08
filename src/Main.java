@@ -15,10 +15,6 @@ public class Main {
 		while (sc.hasNextLine()) {
 
 			s = sc.nextLine();
-
-			 if (s.isEmpty()) {
-				 break;
-			 }
 			 
 			String[] parts = s.split(" ");
 
@@ -38,8 +34,6 @@ public class Main {
 
 			buyer.put(product, oldCount + count);
 
-			if (!sc.hasNext())
-				break;
 		}
 
 		for (Map.Entry<String, TreeMap<String, Integer>> entry : buyers.entrySet()) {
